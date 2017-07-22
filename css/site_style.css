@@ -1,0 +1,83 @@
+body{
+   background-color: white;
+}
+
+h1{
+   color:lightgreen;
+}
+
+div#testDiv{
+   color:yellow;
+}
+
+h2{
+   color:lightgreen;
+}
+
+h3{
+   color:lightgreen;
+}
+
+h4{
+   color:lightgreen;
+}
+
+h5{
+   color:lightgreen;
+}
+
+h6{
+   color:lightgreen;
+   border: 5px solid powderblue;
+   padding: 30px;
+   margin:25px;
+
+}
+
+h7{
+   color:red;
+}
+
+h8{
+   color:white;
+}
+
+h9{
+   color:blue;
+}
+
+p{
+   color:white;
+}
+
+p#difP{
+   color:lightgreen;
+}
+
+pre{
+   color:white;
+}
+
+strong{
+   color:yellow;
+}
+
+b{
+   color:yellow;
+}
+
+i{
+   color:orange;
+}
+
+em{
+   color:orange;
+}
+
+address{
+   color:rgb(255,0,255);
+}
+
+bdo{
+   color:rgb(100,255,50);
+}
