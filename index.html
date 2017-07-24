@@ -33,37 +33,33 @@
 
     <div id="page_navbar">
         <script>
-            $("document").ready(function() {
-                $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
-                    $("#navbar li").each(function() {
-                        if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
-                            $(this).addClass("active");
-                        }
-                    });
+        $("document").ready(function() {
+            $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
+                $("#navbar li").each(function() {
+                    if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
+                        $(this).addClass("active");
+                    }
                 });
             });
+        });
         </script>
     </div>
 </head>
 
 <body>
 
+    <img class="img-circle" align="left" style="margin: 22px 32px 18px 28px" src="img/profile.jpg" width="15%" height="15%">
+    <p style="position: relative; left: 30px">
+        Welcome
+    </p>
 
-<!--
-    <div class="container">
+    <div style="clear:both"></div>
 
-        Main component for a primary marketing message or call to action
-        <div class="jumbotron">
-            <h1>Navbar example</h1>
-            <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-            <p>To see the difference between static and fixed top navbars, just scroll.</p>
-            <p>
-                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-            </p>
-        </div>
-
-    </div> /container -->
-
+    <p id="update_stat" style="clear:both">
+        <br>
+        <br>
+        Last updated: <!--#echo var="LAST_MODIFIED" -->
+    </p>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -73,4 +69,5 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 </body>
+
 </html>

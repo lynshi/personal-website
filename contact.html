@@ -33,23 +33,30 @@
 
     <div id="page_navbar">
         <script>
-            $("document").ready(function() {
-                $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
-                    $("#navbar li").each(function() {
-                        if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
-                            $(this).addClass("active");
-                        }
-                    });
+        $("document").ready(function() {
+            $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
+                $("#navbar li").each(function() {
+                    if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
+                        $(this).addClass("active");
+                    }
                 });
             });
+        });
         </script>
     </div>
 </head>
 
 <body>
 
-Hello World!
+    <center>
+        Email: lynshi@umich.edu
+    </center>
 
+    <p id="update_stat" style="clear:both">
+        <br>
+        <br>
+        Last updated: <!--#echo var="LAST_MODIFIED" -->
+    </p>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

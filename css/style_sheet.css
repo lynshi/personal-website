@@ -1,10 +1,57 @@
 body {
-    background-image: url("../images/bg-5-full.jpg") !important;
+    background-image: url("../img/bg-5-full.jpg") !important;
     color: white !important;
     font-size: 14px !important;
 }
 
+html {
+    margin-left: 10%;
+}
+
 #navbar_template {
     background-color: rgba(211, 211, 211, 0.3);
-    border-color: rgba(211, 211, 211, 0.3);
+    border-color: rgba(211, 211, 211, 0.0);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#navbar_template .navbar-nav {
+    padding-left: 20%;
+}
+
+#navbar_template li a {
+    color: white;
+}
+
+#navbar_template li a:hover {
+    background-color: #F64C72;
+}
+
+.navbar .nav .active > a {
+    background-color: #111 !important;
+}
+
+.navbar-brand {
+    color: #F64C72 !important;
+}
+
+.dropdown-menu li a {
+    color: black !important;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    visibility: hidden !important;
+    margin-top: -1px !important;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
 }
