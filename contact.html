@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Personal site of Lyndon Shi, University of Michigan Electrical Engineering 2020">
     <meta name="author" content="Lyndon Shi">
+    <meta name="description" content="Personal site of Lyndon Shi, University of Michigan Electrical Engineering 2020">
+    <meta name="keywords" content="Lyndon Shi, University of Michigan, Electrical Engineering, Class of 2020, Research">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <title>Lyndon Shi, Personal Site</title>
 
@@ -50,14 +52,19 @@
 
     <div class="container">
         <center>
-            Email me at <a href="mailto:lynshi@umich.edu">lynshi@umich.edu</a>
-        </center>
+        <style>
+        .e-mail:before {
+            content: "\006c\0079\006e\0073\0068\0069\0040\0075\006d\0069\0063\0068\002e\0065\0064\0075";
+        }
+        </style>
+        Email me at: <span class="e-mail"></span>
+    </center>
 
-        <p style="clear:both">
-            <br>
-            <br>
-            Last updated: <!--#echo var="LAST_MODIFIED" -->
-        </p>
-    </div>
+    <p style="clear:both">
+        <br>
+        <br>
+        Last updated: <!--#echo var="LAST_MODIFIED" -->
+    </p>
+</div>
 </body>
 </html>
