@@ -10,7 +10,7 @@
     <meta name="keywords" content="Lyndon Shi, University of Michigan, Electrical Engineering, Class of 2020, Research">
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>Contact Information</title>
+    <title>Education</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,24 +50,37 @@
 </head>
 
 <body>
-
     <div class="container">
-        <center>
-        <style>
-        .e-mail:before {
-            content: "\006c\0079\006e\0073\0068\0069\0040\0075\006d\0069\0063\0068\002e\0065\0064\0075";
+        <h1>Education</h1>
+        <ul>
+            <li><b>University of Michigan, Ann Arbor (2016-2020)</b>
+                <ul>
+                    <li>Major: Electrical engineering</li>
+                    <li>Minor: Mathematics</li>
+                    <li>Courses
+                        <ul>
+                            <li>ENGR 100-950: Electronics for Atmospheric and Space Measurements</li>
+                            <li>ENGR 151: Accelerated Introduction to Computers and Programming</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b>New Jersey Governor's School of Engineering and Technology (2015)</b></li>
+            <li><b>Middlesex County Academy for Science, Mathematics, and Engineering Technologies (2012-2016)</b>
+                <ul>
+                    <li>Electrical and Computer Engineering Technologies</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="insert-here"></div>
+
+        <script>
+        if(window.location.href.indexOf("umich") > -1) {
+            $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" --> </p>');
         }
-        </style>
-        Email me at: <span class="e-mail"></span>
-    </center>
-
-    <div class="insert-here"></div>
-
-    <script>
-    if(window.location.href.indexOf("umich") > -1) {
-        $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" --> </p>');
-    }
-    </script>
-</div>
+        </script>
+    </div>
 </body>
+
 </html>
