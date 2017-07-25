@@ -13,6 +13,10 @@ p a {
     color: lightgreen !important;
 }
 
+li a b {
+    color: lightgreen !important;
+}
+
 #navbar_template {
     background-color: #1B2631;
     border: 0;
