@@ -16,10 +16,6 @@ html {
     box-shadow: none;
 }
 
-#navbar_template .navbar-nav {
-    padding-left: 20%;
-}
-
 #navbar_template li a {
     color: white;
 }
@@ -38,10 +34,17 @@ html {
 
 .navbar-brand {
     color: #F64C72 !important;
+    font-weight: bold !important;
+    float: left !important;
 }
 
 .dropdown-menu li a {
     color: black !important;
+    background-color: white !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #F64C72 !important;
 }
 
 .dropdown-menu .sub-menu {
