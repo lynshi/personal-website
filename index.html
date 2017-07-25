@@ -24,12 +24,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 
     <link href="css/style_sheet.css" rel="stylesheet">
 
@@ -76,11 +77,13 @@
             </div>
         </div>
 
-        <p style="clear:both">
-            <br>
-            <br>
-            Last updated: <!--#echo var="LAST_MODIFIED" -->
-        </p>
+        <div class="insert-here"></div>
+
+        <script>
+        if(window.location.href.indexOf("umich") > -1) {
+            $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" --> </p>');
+        }
+        </script>
     </div>
 </body>
 
