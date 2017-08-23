@@ -41,7 +41,12 @@
                 $("#navbar li").each(function() {
                     if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
                         $(this).addClass("active");
-                    }
+                    };
+                    if(window.location.href.indexOf("personal.umich") < 0) {
+                        if($(this).attr("id") == "umich_only") {
+                            $(this).remove();
+                        }
+                    };
                 });
             });
         });
@@ -76,9 +81,9 @@
         <div class="insert-here"></div>
 
         <script>
-        if(window.location.href.indexOf("umich") > -1) {
-            $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" --> </p>');
-        }
+            if(window.location.href.indexOf("personal.umich") > -1) {
+                $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" --> </p>');
+            }
         </script>
     </div>
 </body>
