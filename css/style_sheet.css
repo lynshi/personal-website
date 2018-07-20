@@ -1,7 +1,8 @@
 body {
     background-image: url("../img/bg-5-full.jpg") !important;
     color: white !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
+    line-height: 30px !important;
     padding-top: 70px;
 }
 
