@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Lyndon Shi">
+    <meta name="description" content="Personal site of Lyndon Shi, University of Michigan Computer Science">
+    <meta name="keywords" content="Lyndon Shi, University of Michigan, Computer Science, Research">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Lyndon Shi, Personal Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <link href="css/style_sheet.css" rel="stylesheet">
+
+    <div id="page_navbar">
+        <script>
+        $("document").ready(function() {
+            $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
+                $("#navbar li").each(function() {
+                    if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
+                        $(this).addClass("active");
+                    };
+                    if(window.location.href.indexOf("personal.umich") < 0) {
+                        if($(this).attr("id") == "umich_only") {
+                            $(this).remove();
+                        }
+                    };
+                });
+            });
+        });
+        </script>
+    </div>
+</head>
+
+<body>
+<center>
+    <div id="contact_div">
+    <h2>Contact Me</h2>
+    <form method=POST id="myform" action="/cgi-bin/htmail/lynshi@umich.edu">
+        <table style="border-spacing:10px;border-collapse:separate">
+            <tr>
+                <td>Your e-mail address:</td>
+                <td><input name="from" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Subject:</td>
+                <td><input name="subject" style="color:black"></td>
+            </tr>
+        </table>
+        <input name=ccme type=checkbox checked> Receive a copy of this message<p>
+        Please enter your message below. I will get back to you as soon as possible!<p>
+        <textarea name="body" cols=75 rows=10 style="color:black"></textarea><p>
+        <input type=submit value="Send Message" style="background-color:#F64C72"><p>
+    </form>
+    </div>
+
+    <div id="response"></div>
+
+    <script>
+        $(function() {
+            $("#myform").on("submit", function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: $(this).attr("action"),
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    beforeSend: function() {
+                        $("#contact_div").html("sending...");
+                    },
+                    success: function(data) {
+                        $("#contact_div").hide();
+                        $("#response").html(data);
+                    }
+                });
+            });
+        });
+    </script>
+</center>
+</body>
+</html>
