@@ -40,7 +40,7 @@
             $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
                 $("#navbar li").each(function() {
                     if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
-                        if ($("a", this).attr("href") === "/" && (window.location.href.substr(-4) === ".com" || window.location.href.substr(-3) === ".io")) {
+                        if ($("a", this).attr("href") === "/" && (window.location.href.substr(-5) === ".com/" || window.location.href.substr(-4) === ".io/")) {
                             $(this).addClass("active");
                         }
                         else if ($("a", this).attr("href") !== "/") {
