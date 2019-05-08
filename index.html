@@ -52,6 +52,11 @@
                             $(this).remove();
                         }
                     };
+                    if(window.location.href.indexOf("personal.umich") > -1) {
+                        if($(this).attr("id") == "not_umich") {
+                            $(this).remove();
+                        }
+                    };
                 });
             });
         });

@@ -47,6 +47,16 @@
                             $(this).remove();
                         }
                     };
+                    if(window.location.href.indexOf("github") > -1) {
+                        if($(this).attr("id") == "not_github") {
+                            $(this).remove();
+                        }
+                    };
+                    if(window.location.href.indexOf("personal.umich") > -1) {
+                        if($(this).attr("id") == "not_umich") {
+                            $(this).remove();
+                        }
+                    };
                 });
             });
         });
