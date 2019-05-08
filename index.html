@@ -40,7 +40,15 @@
             $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
                 $("#navbar li").each(function() {
                     if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
-                        $(this).addClass("active");
+                        if ($("a", this).attr("href") === "/" && window.location.href.substr(-4) === ".com") {
+                            $(this).addClass("active");
+                        }
+                        else if ($("a", this).attr("href") === "/" && window.location.href.substr(-4) !== ".com") {
+                            ;
+                        }
+                        else {
+                            $(this).addClass("active");
+                        }
                     };
                     if(window.location.href.indexOf("personal.umich") < 0) {
                         if($(this).attr("id") == "umich_only") {
