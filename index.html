@@ -1,151 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="author" content="Lyndon Shi">
-    <meta name="description" content="Personal site of Lyndon Shi, University of Michigan Computer Science">
-    <meta name="keywords" content="Lyndon Shi, University of Michigan, Computer Science, Research">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <title>Lyndon Shi, Personal Site</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-    <link href="css/style_sheet.css" rel="stylesheet">
-
-    <div id="page_navbar">
-        <script>
-        $("document").ready(function() {
-            $("#page_navbar").load("templates/navbar.html #navbar_template", function(){
-                $("#navbar li").each(function() {
-                    if(window.location.href.indexOf($("a", this).attr("href")) > -1) {
-                        if ($("a", this).attr("href") === "/" && (window.location.href.substr(-5) === ".com/" || window.location.href.substr(-4) === ".io/")) {
-                            $(this).addClass("active");
-                        }
-                        else if ($("a", this).attr("href") !== "/") {
-                            $(this).addClass("active");
-                        }
-                    };
-                    if(window.location.href.indexOf("personal.umich") < 0) {
-                        if($(this).attr("id") == "umich_only") {
-                            $(this).remove();
-                        }
-                    };
-                    if(window.location.href.indexOf("github") > -1) {
-                        if($(this).attr("id") == "not_github") {
-                            $(this).remove();
-                        }
-                    };
-                    if(window.location.href.indexOf("personal.umich") > -1) {
-                        if($(this).attr("id") == "not_umich") {
-                            $(this).remove();
-                        }
-                    };
-                });
-            });
-        });
-        </script>
-    </div>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <img class="img-responsive img-circle center-block" src="img/profile.jpg" alt="Lyndon Shi Profile Picture" style="max-width: 75%;">
-            </div>
-            <div class="col-md-9">
-                <h1 align="center">
-                    CS@UMich
-                </h1>
-                <p style="padding-top: 20px">
-                    I am a rising senior at the University of Michigan, 
-                    majoring in computer science with a minor in mathematics. 
-                    Currently, I am a Kiluk Proof Tutor for MATH 217 (Linear Algebra),
-                    the gateway course for mathematics majors at 
-                    Michigan.
 
-                    <br>
-                    <br>
-                    
-                    In the Fall 2019 semester, I interned with
-                    <a href="https://trilliumsecure.com/" target="_blank">
-                    Trillium Secure</a>, a connected and autonomous vehicle
-                    cybersecurity startup, through the 
-                    <a href="http://www.umtri.umich.edu/" target="_blank">
-                    University of Michigan Transportation Research Institute</a>.
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top
+    not-scrolled">
+        <a class="navbar-brand" href="/">Lyndon Shi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav">
+                <a class="nav-link nav-item" href="#">Home <span class="sr-only">(current)</span></a>
+            </div>
+            
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="lead">
+                <p>
+                    def Welcome():
+                </p>
+                <p style="margin-left: 40px">
+                    Typed text 2 Longer
                 </p>
             </div>
         </div>
-
-        <p>
-            In the past, I was a <a href="http://pwp.gatech.edu/pascal-van-hentenryck/students/"
-            target="_blank">Seth Bonder Undergraduate</a>
-            at the University of Michigan working under the direction of
-            <a href="http://pwp.gatech.edu/pascal-van-hentenryck/"
-            target="blank">Professor Pascal Van Hentenryck</a>.
-            My research focused on optimization problems related to power systems and differential privacy.
-
-            <br>
-            <br>
-
-            In Winter 2018, I was an Instructional Aide for
-            <a href="https://eng100.engin.umich.edu/list/section-950/" target="_blank">ENGR 100-950</a>,
-            Electronics for Atmospheric and Space Measurements taught by
-            <a href="http://clasp.engin.umich.edu/people/ridley/FACULTY" target="_blank">Professor Aaron Ridley</a>.
-            Students in this class design and build a weather balloon payload housing a variety of
-            atmospheric sensors. Payloads are deployed on a balloon to 100,000 ft, then
-            recovered to analyze data collected by the integrated sensors.
-
-            <br>
-            <br>
-
-            In Fall 2017, I was a member of <a href="http://cfe.umich.edu/techlab-mcity/" target="_blank">TechLab</a>
-            at <a href="https://mcity.umich.edu/" target="_blank">Mcity</a>, a semester-long internship
-            for Michigan students with startups in the mobility industry.
-            As part of this program, I worked with <a href="http://www.tomesoftware.com/" target="_blank">Tome</a>
-            to <a href="http://www.tomesoftware.com/Tome-Trek_Bike_Safety_UM-Press_Release.pdf" target="_blank">develop innovative solutions to prevent bicycle-vehicle collisions</a>
-            by leveraging connected infrastructure and machine learning. 
-
-            <br>
-            <br>
-
-            Also in 2017, I worked with <a href="http://www-personal.umd.umich.edu/~dmadma/" target="_blank">Professor Di Ma</a>
-            through the <a href="http://mdp.engin.umich.edu/" target="_blank">Multidisciplinary Design Program</a>,
-            researching intrusion detection for the Controller Area Network (CAN) bus in automobiles and developing
-            a machine-learning based intrusion detection and prevention system for the CAN bus.
-        </p>
-
-        <center>
-            <div class="insert-here"></div>
-            <script>
-                    if(window.location.href.indexOf("personal.umich") > -1) {
-                        $( ".insert-here" ).append('<p style="clear:both"> <br> <br> Last updated: <!--#echo var="LAST_MODIFIED" -->  </p>');
-                    }
-                </script>
-        </center>
     </div>
+
+    <p>
+        waste of time
+    </p>
+    <p>
+            waste of time
+        </p>
+        <p>
+                waste of time
+            </p>
+            <p>
+                    waste of time
+                </p>
+                <p>
+                        waste of time
+                    </p><p>
+                            waste of time
+                        </p><p>
+                                waste of time
+                            </p>
+                            <p>
+                                    waste of time
+                                </p><p>
+                                        waste of time
+                                    </p><p>
+                                            waste of time
+                                        </p><p>
+                                                waste of time
+                                            </p><p>
+                                                    waste of time
+                                                </p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('not-scrolled', $(this).scrollTop() < $nav.height());
+            });
+        });
+    </script>
+
+    <script src="dist/bundle.js"></script>
 </body>
 
 </html>

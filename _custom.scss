@@ -1,0 +1,14 @@
+.bg-dark {
+    &.navbar-dark .navbar-nav {
+
+        .nav-link:hover,
+        .active > .nav-link {
+            color: $pink !important;
+        }
+
+        .nav-link:focus,
+        .active > .nav-link {
+            color: $white !important;
+        }
+    }
+}
