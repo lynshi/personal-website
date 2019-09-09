@@ -20,6 +20,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-weight: bold;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .lead h1:nth-child(1) {
@@ -38,6 +39,7 @@
     overflow: hidden;
     font-weight: bold;
     font-style: italic;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .lead h2:nth-child(2) {
@@ -219,4 +221,10 @@
 
 .container-success {
     background-color: $success;
+}
+
+.carousel-item {
+    height: 325px;
+    overflow: hidden;
+    width: 100%;
 }
