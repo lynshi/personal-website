@@ -1,26 +1,56 @@
-.lead p {
+.lead h1 {
     border-right: .15em solid #20c997;;
     font-family: "Courier";
-    font-size: 14px;
     color: #20c997;
     white-space: nowrap;
     overflow: hidden;
 }
-.lead p:nth-child(1) {
-    width: 7.3em;
+
+.lead h1:nth-child(1) {
+    width: 9em;
     -webkit-animation: type 1s steps(40, end);
     animation: type 1s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-.lead p:nth-child(2) {
-    width: 7.3em;
+.lead h2 {
+    border-right: .15em solid #20c997;;
+    font-family: "Courier";
+    color: #20c997;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lead h2:nth-child(2) {
+    width: 14em;
     opacity: 0;
-    -webkit-animation: type2 1s steps(40, end);
-    animation: type2 1s steps(40, end);
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.lead h2:nth-child(3) {
+    width: 18em;
+    opacity: 0;
+    -webkit-animation: type3 2.75s steps(40, end);
+    animation: type3 2.75s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.lead h2:nth-child(4) {
+    width: 20em;
+    opacity: 0;
+    -webkit-animation: type3 2.75s steps(40, end);
+    animation: type3 2.75s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -66,6 +96,70 @@
 }
 
 @-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #20c997;;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #20c997;;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #20c997;;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type4 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #20c997;;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type4 {
     0% {
         width: 0;
     }
