@@ -209,6 +209,14 @@
     transition: background-color 200ms linear;
 }
 
-body {
+.container {
     padding-top: 70px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.container-success {
+    background-color: $success;
 }

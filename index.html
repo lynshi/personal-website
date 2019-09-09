@@ -25,10 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
             </ul>
         </div>
@@ -56,9 +53,149 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
-        
+    <div class="container-fluid container-success" id="about">
+        <div class="row align-items-center" style="padding-top: 10px">
+            <div class="col">
+                <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 20rem;"">
+                    <div class="card-header">Education Details</div>
+                    <div class="card-body">
+                        <h4 class="card-title">University of Michigan, Ann Arbor</h4>
+                        <ul class="card-text">
+                            <li>Graduation: December 2019</li>
+                            <li>B.S.E. Computer Science</li>
+                            <li>Minor: Mathematics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="work-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#work-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#work-carousel" data-slide-to="1"></li>
+                        <li data-target="#work-carousel" data-slide-to="2"></li>
+                        <li data-target="#work-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Work Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Capital One, Software Engineer Intern</h4>
+                                    <ul class="card-text">
+                                        <li>Jun 2019 - Aug 2019</li>
+                                        <li>AWS Lambda, Go, PostgreSQL, Python, React</li>
+                                        <li>Cybersecurity, Machine Learning, Web Dashboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Work Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-white" href="http://www.umtri.umich.edu/" target="_blank">University of Michigan Transportation Research Institute</a>, Assistant in Research</h4>
+                                    <ul class="card-text">
+                                        <li>Sep 2018 - Dec 2018</li>
+                                        <li>Jupyter Notebook, Python</li>
+                                        <li>Cybersecurity, Machine Learning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Work Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title">University of Michigan, Research Assistant</h4>
+                                    <ul class="card-text">
+                                        <li>May 2017 - Jul 2018</li>
+                                        <li>C++, High Performance Computing, Julia, Python</li>
+                                        <li>Operations Research, Optimization Models, Power Systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Work Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-white" href="https://www.tomesoftware.com/" target="_blank">Tome</a>, <a class="text-white" href="https://cfe.umich.edu/techlab-mcity/" target="_blank">TechLab at Mcity Intern</a></h4>
+                                    <ul class="card-text">
+                                        <li>Sep 2017 - Dec 2017</li>
+                                        <li>JavaScript, MongoDB, Python</li>
+                                        <li>Machine Learning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#work-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#work-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div id="teaching-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#teaching-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#teaching-carousel" data-slide-to="1"></li>
+                        <li data-target="#teaching-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Teaching Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-white" href="https://bulletin.engin.umich.edu/courses/eecs/#subnav-3" target="_blank">EECS 477: Introduction to Algorithms</a></h4>
+                                    <ul class="card-text">
+                                        <li>Fall 2019</li>
+                                        <li>Instructional Aide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Teaching Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-white" target="_blank" href="https://lsa.umich.edu/math/undergraduates/undergraduate-math-courses/200-level-math-courses.html">MATH 217: Linear Algebra</a></h4>
+                                    <ul class="card-text">
+                                        <li>Fall 2018 - Fall 2019</li>
+                                        <li>Kiluk Proof Tutor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                                <div class="card-header">Teaching Experience</div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="https://eng100.engin.umich.edu/list/section-950/" target="_blank" class="text-white">ENG100: Electronics for Atmospheric and Space Measurements</a></h4>
+                                    <ul class="card-text">
+                                        <li>Winter 2018</li>
+                                        <li>Instructional Aide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#teaching-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#teaching-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
