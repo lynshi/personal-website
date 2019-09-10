@@ -1,34 +1,42 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './app.js',
-  output: {
-    filename: 'bundle.js',
-  },
-  mode: 'none',
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins() {
-                return [
-                  require('precss'),
-                  require('autoprefixer')
-                ];
-              },
+    entry: './src/index.js',
+    mode: 'production',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist') // move bundle to dist/bundle.js
+    },
+    module: {
+        rules: [
+            {
+                test: /\.scss$/,           // For *.scss files....
+                use: [{
+                    loader: 'style-loader' // creates style nodes from JS strings
+                }, {
+                    loader: 'css-loader'   // transates CSS into CommonJS
+                }, {
+                    loader: 'sass-loader'  // compiles Sass to CSS
+                }]
             },
-          },
-          { loader: 'sass-loader' },
-        ],
-      },
-      {
-        test: /.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-        use: "url-loader?limit=100000"
-      }
-    ],
-  },
+            {
+                test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, // For Font Awesome 
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/',    // where the fonts will go
+                        //publicPath: '../'       // override the default path
+                    }
+                }]
+            },
+        ]
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",        // Map jQuery to $
+            jQuery: "jquery"    // Add jQuery
+        })
+    ]
 };
