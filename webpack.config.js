@@ -5,24 +5,30 @@ module.exports = {
   },
   mode: 'none',
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: [
-        { loader: 'style-loader' },
-        { loader: 'css-loader' },
-        {
-          loader: 'postcss-loader',
-          options: {
-            plugins() {
-              return [
-                require('precss'),
-                require('autoprefixer')
-              ];
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins() {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              },
             },
           },
-        },
-        { loader: 'sass-loader' },
-      ],
-    }],
+          { loader: 'sass-loader' },
+        ],
+      },
+      {
+        test: /.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+        use: "url-loader?limit=100000"
+      }
+    ],
   },
 };

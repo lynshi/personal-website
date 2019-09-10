@@ -228,3 +228,47 @@
     overflow: hidden;
     width: 100%;
 }
+
+.container-indigo {
+    background-color: $indigo;
+}
+
+.container-secondary {
+    background-color: $secondary;
+}
+
+.container-primary {
+    background-color: $primary;
+}
+
+.container-gray-600 {
+    background-color: $gray-600;
+}
+
+.container-gray-900 {
+    background-color: $gray-900;
+}
+
+.container-black {
+    background-color: $black;
+}
+
+.container-fluid {
+    padding: $spacer !important;
+}
+
+.progress-big {
+    font-size: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+@media only screen and (max-device-width: 768) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}

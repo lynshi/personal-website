@@ -23,15 +23,14 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
-                </li>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="#about">About Me</a>
+                <a class="nav-item nav-link" href="#skills">Skills</a>
             </ul>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid parallax">
         <div class="container">
             <div class="row">
                 <div class="col-9">
@@ -53,10 +52,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid container-success" id="about">
-        <div class="row" style="padding-top: 10px">
+
+    <div class="container-fluid container-primary" id="about">
+        <div class="row">
             <div class="col">
-                <div class="card text-white bg-primary mb-3 mx-auto align-top" style="max-width: 20rem;"">
+                <div class="card text-white bg-danger mb-3 mx-auto align-top" style="max-width: 20rem;"">
                     <div class="card-header">Education Details</div>
                     <div class="card-body">
                         <h4 class="card-title">University of Michigan, Ann Arbor</h4>
@@ -78,7 +78,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Work Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title">Capital One, Software Engineer Intern</h4>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Work Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title"><a class="text-white" href="http://www.umtri.umich.edu/" target="_blank">University of Michigan Transportation Research Institute</a>, Assistant in Research</h4>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Work Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title">University of Michigan, Research Assistant</h4>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Work Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title"><a class="text-white" href="https://www.tomesoftware.com/" target="_blank">Tome</a>, <a class="text-white" href="https://cfe.umich.edu/techlab-mcity/" target="_blank">TechLab at Mcity Intern</a></h4>
@@ -149,7 +149,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Teaching Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title"><a class="text-white" href="https://bulletin.engin.umich.edu/courses/eecs/#subnav-3" target="_blank">EECS 477: Introduction to Algorithms</a></h4>
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Teaching Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title"><a class="text-white" target="_blank" href="https://lsa.umich.edu/math/undergraduates/undergraduate-math-courses/200-level-math-courses.html">MATH 217: Linear Algebra</a></h4>
@@ -173,7 +173,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="card text-white bg-light mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card text-white bg-info mb-3 mx-auto" style="max-width: 20rem;">
                                 <div class="card-header">Teaching Experience</div>
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="https://eng100.engin.umich.edu/list/section-950/" target="_blank" class="text-white">ENG100: Electronics for Atmospheric and Space Measurements</a></h4>
@@ -197,6 +197,42 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid container-gray-900" id="skills">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-9 text-center">
+                <h3>
+                    Over the years, I've accumulated knowledge and experience in the following:
+                </h3>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">C++</div>
+                </div>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">Go</div>
+                </div>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">Java</div>
+                </div>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">Machine Learning</div>
+                </div>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">Python</div>
+                </div>
+                <div class="progress progress-big">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">SQL</div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-right">
+            <a href="#"><i class="twitter"></i></a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
