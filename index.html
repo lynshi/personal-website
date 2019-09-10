@@ -24,7 +24,7 @@
         <div class="navbar-nav mr-auto">
             <a class="nav-item nav-link" href="#about">About Me</a>
             <a class="nav-item nav-link" href="#skills">Skills</a>
-        </ul>
+        </div>
     </div>
 </nav>
 
@@ -197,7 +197,7 @@
         </div>
     </div>
 
-    <div class="container-fluid container-gray-900" id="skills">
+    <div class="container-fluid container-primary" id="skills">
         <div class="row">
             <div class="col"></div>
             <div class="col-9 text-center">
@@ -227,13 +227,16 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-3">
-        <div class="container text-right">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col my-auto text-right">
+                <a href="https://www.linkedin.com/in/lynshi/"><i class="fab fa-linkedin fa-fw"></i></a>
+                <a href="https://github.com/lynshi"><i class="fab fa-github fa-fw"></i></a>
+            </div>
         </div>
-    </footer>
+    </div>
     
-    <script src="dist/bundle.js"></script>
+    <script src="bundle.js"></script>
 
     <script>
         $(function () {
@@ -246,7 +249,7 @@
 
     <script>
         $(function () {  // https://stackoverflow.com/a/38106970
-            var shiftWindow = function() { scrollBy(0, -60) };
+            var shiftWindow = function() { scrollBy(0, -65) };
             if (location.hash) shiftWindow();
             window.addEventListener("hashchange", shiftWindow);
         });

@@ -6,7 +6,7 @@ module.exports = {
     mode: 'production',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist') // move bundle to dist/bundle.js
+        path: path.resolve(__dirname, '') // move bundle to dist/bundle.js
     },
     module: {
         rules: [
