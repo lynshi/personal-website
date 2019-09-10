@@ -12,13 +12,26 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,           // For *.scss files....
-                use: [{
-                    loader: 'style-loader' // creates style nodes from JS strings
-                }, {
-                    loader: 'css-loader'   // transates CSS into CommonJS
-                }, {
-                    loader: 'sass-loader'  // compiles Sass to CSS
-                }]
+                use: [
+                    {
+                        loader: 'style-loader' // creates style nodes from JS strings
+                    }, {
+                        loader: 'css-loader'   // transates CSS into CommonJS
+                    },
+                    {
+                        // Loader for webpack to process CSS with PostCSS
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function () {
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'  // compiles Sass to CSS
+                    }]
             },
             {
                 test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, // For Font Awesome 
@@ -31,12 +44,24 @@ module.exports = {
                     }
                 }]
             },
+            {
+                // Exposes jQuery for use outside Webpack build
+                test: require.resolve('jquery'),
+                use: [{
+                    loader: 'expose-loader',
+                    options: 'jQuery'
+                }, {
+                    loader: 'expose-loader',
+                    options: '$'
+                }]
+            }
         ]
     },
     plugins: [
         new webpack.ProvidePlugin({
-            $: "jquery",        // Map jQuery to $
-            jQuery: "jquery"    // Add jQuery
+            $: 'jquery',
+            jQuery: 'jquery',
+            Popper: ['popper.js', 'default']
         })
     ]
 };
