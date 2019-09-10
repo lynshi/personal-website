@@ -12,24 +12,23 @@
     <title>Lyndon Shi, Personal Site</title>
 </head>
 
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top
     not-scrolled">
-        <a class="navbar-brand" href="/">Lyndon Shi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <a class="navbar-brand" href="/">Lyndon Shi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="#about">About Me</a>
-                <a class="nav-item nav-link" href="#skills">Skills</a>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="#about">About Me</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+        </ul>
+    </div>
+</nav>
 
+<body>
     <div class="jumbotron jumbotron-fluid parallax">
         <div class="container">
             <div class="row">
@@ -53,7 +52,7 @@
         </div>
     </div>
 
-    <div class="container-fluid container-primary" id="about">
+    <div class="container-fluid container-primary jump-target" id="about">
         <div class="row">
             <div class="col">
                 <div class="card text-white bg-danger mb-3 mx-auto align-top" style="max-width: 20rem;"">
@@ -242,6 +241,14 @@
                 var $nav = $(".fixed-top");
                 $nav.toggleClass('not-scrolled', $(this).scrollTop() < $nav.height());
             });
+        });
+    </script>
+
+    <script>
+        $(function () {  // https://stackoverflow.com/a/38106970
+            var shiftWindow = function() { scrollBy(0, -60) };
+            if (location.hash) shiftWindow();
+            window.addEventListener("hashchange", shiftWindow);
         });
     </script>
 </body>
