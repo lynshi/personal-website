@@ -267,8 +267,72 @@
     background-attachment: fixed;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeIn2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn2 {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
 @media only screen and (max-device-width: 768) {
     .parallax {
       background-attachment: scroll;
+    }
+
+    .lead h1 {
+        border-right: transparent !important;
+        white-space: normal !important;
+    }
+
+    .lead h1:nth-child(1) {
+        -webkit-animation: fadeIn 2s !important;
+        animation: fadeIn 2s !important;
+        width: 100% !important;
+    }
+
+    .lead h2 {
+        border-right: transparent !important;
+        white-space: normal !important;
+        font-size: $small-font-size;
+    }
+
+    .lead h2:nth-child(2) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
+    }
+
+    .lead h2:nth-child(3) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
+    }
+
+    .lead h2:nth-child(4) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
     }
 }
