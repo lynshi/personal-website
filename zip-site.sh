@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r site.zip css/ fonts/ img/ bundle.js index.html
+zip -r site.zip css/ fonts/ img/ bundle.js *.html
