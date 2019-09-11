@@ -1,53 +1,3 @@
-@media only screen and (max-device-width: 768px) {
-    .parallax {
-      background-attachment: scroll !important;
-    }
-
-    .lead h1 {
-        border-right: transparent !important;
-        white-space: normal !important;
-    }
-
-    .lead h1:nth-child(1) {
-        -webkit-animation: fadeIn 2s !important;
-        animation: fadeIn 2s !important;
-        width: 100% !important;
-    }
-
-    .lead h2 {
-        border-right: transparent !important;
-        white-space: normal !important;
-        font-size: $small-font-size;
-    }
-
-    .lead h2:nth-child(2) {
-        -webkit-animation: fadeIn2 2s !important;
-        animation: fadeIn2 2s !important;
-        width: 100% !important;
-        -webkit-animation-delay: 0s !important;
-        animation-delay: 0s !important;
-        opacity: 1 !important;
-    }
-
-    .lead h2:nth-child(3) {
-        -webkit-animation: fadeIn2 2s !important;
-        animation: fadeIn2 2s !important;
-        width: 100% !important;
-        -webkit-animation-delay: 0s !important;
-        animation-delay: 0s !important;
-        opacity: 1 !important;
-    }
-
-    .lead h2:nth-child(4) {
-        -webkit-animation: fadeIn2 2s !important;
-        animation: fadeIn2 2s !important;
-        width: 100% !important;
-        -webkit-animation-delay: 0s !important;
-        animation-delay: 0s !important;
-        opacity: 1 !important;
-    }
-}
-
 .bg-dark {
     &.navbar-dark .navbar-nav {
 
@@ -256,11 +206,6 @@
     }
 }
 
-.fixed-top.not-scrolled {
-    background-color: transparent !important;
-    transition: background-color 200ms linear;
-}
-
 .container {
     padding-top: 70px;
 }
@@ -335,4 +280,61 @@
 @-webkit-keyframes fadeIn2 {
     from { opacity: 1; }
     to   { opacity: 0; }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .parallax {
+      background-attachment: scroll !important;
+    }
+
+    .lead h1 {
+        border-right: transparent !important;
+        white-space: normal !important;
+    }
+
+    .lead h1:nth-child(1) {
+        -webkit-animation: fadeIn 2s !important;
+        animation: fadeIn 2s !important;
+        width: 100% !important;
+    }
+
+    .lead h2 {
+        border-right: transparent !important;
+        white-space: normal !important;
+        font-size: $small-font-size;
+    }
+
+    .lead h2:nth-child(2) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
+    }
+
+    .lead h2:nth-child(3) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
+    }
+
+    .lead h2:nth-child(4) {
+        -webkit-animation: fadeIn2 2s !important;
+        animation: fadeIn2 2s !important;
+        width: 100% !important;
+        -webkit-animation-delay: 0s !important;
+        animation-delay: 0s !important;
+        opacity: 1 !important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .fixed-top.not-scrolled {
+        background-color: transparent !important;
+        transition: background-color 200ms linear;
+    }
 }
