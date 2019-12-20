@@ -1,6 +1,8 @@
 .vscode
 site.zip
 
+public
+
 # Logs
 logs
 *.log
