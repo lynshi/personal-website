@@ -10,9 +10,11 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 import Header from "./header";
-import "./layout.css";
+import "../style.scss";
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -28,13 +30,17 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <Container>
-                <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
+            <Container fluid="true">
+                <Row>
+                    <Col>
+                        <main>{children}</main>
+                        <footer>
+                            © {new Date().getFullYear()}, Built with
+                            {` `}
+                            <a href="https://www.gatsbyjs.org">Gatsby</a>
+                        </footer>
+                    </Col>
+                </Row>
             </Container>
         </>
     );

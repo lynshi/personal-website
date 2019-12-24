@@ -1,7 +1,15 @@
-import Typography from "typography"
-import fairyGateTheme from "typography-theme-fairy-gates"
+import Typography from "typography";
+import lincolnTheme from "typography-theme-lincoln";
 
-const typography = new Typography(fairyGateTheme)
+lincolnTheme.overrideThemeStyles = () => ({
+    a: {
+        textDecoration: "none",
+        backgroundImage: "none",
+        textShadow: "none"
+    }
+});
 
-export const { scale, rhythm, options } = typography
-export default typography
+const typography = new Typography(lincolnTheme);
+
+export const { scale, rhythm, options } = typography;
+export default typography;

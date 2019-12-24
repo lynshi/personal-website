@@ -1,13 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import { Navbar, Nav, NavDropdown, NavItem } from "react-bootstrap";
-
-const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <Link to={props.to}>{props.children}</Link>
-    </li>
-);
+import { Navbar, Nav } from "react-bootstrap";
 
 const Header = ({ siteTitle }) => (
     <Navbar bg="light" expand="lg">

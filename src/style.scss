@@ -1,0 +1,9 @@
+@import "../node_modules/bootswatch/dist/darkly/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootswatch/dist/darkly/bootswatch";
+
+a {
+    box-shadow: none !important;
+    color: #000000;
+    text-decoration: none !important;
+}
