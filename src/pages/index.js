@@ -1,12 +1,16 @@
-import React from "react"
-import { Image } from "../components/image"
+import React from "react";
+import Layout from "../components/layout"
 
 const IndexPage = () => (
-    <div style={{ color: `purple` }}>
-      <Image />
-      <h1>Hello Gatsby!</h1>
-      <p>What a world.</p>
-    </div>
-)
+    <Layout>
+        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
+            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+            <p>
+                What do I like to do? Lots of course but definitely enjoy
+                building websites.
+            </p>
+        </div>
+    </Layout>
+);
 
-export default IndexPage
+export default IndexPage;

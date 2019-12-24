@@ -1,12 +1,12 @@
 import React from "react"
-import Container from 'react-bootstrap/Container'
+import Layout from "../components/layout"
 
 const Resume = () => (
-    <Container>
+    <Layout>
         <center>
-            <iframe src="https://drive.google.com/file/d/1ZPBlG9RXX9-cW5WLZ6PoRG4vQcm1fPRC/preview" width="100%" height="800vh"></iframe>
+            <iframe src="https://drive.google.com/file/d/1ZPBlG9RXX9-cW5WLZ6PoRG4vQcm1fPRC/preview" width="100%" height="800vh" title="resume"></iframe>
         </center>
-    </Container>
+    </Layout>
 )
 
 export default Resume
