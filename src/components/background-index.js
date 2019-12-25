@@ -3,6 +3,10 @@ import { graphql, StaticQuery } from "gatsby";
 import styled from "styled-components";
 
 import BackgroundImage from "gatsby-background-image";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const IndexBackground = ({ className }) => (
     <StaticQuery
@@ -26,7 +30,16 @@ const IndexBackground = ({ className }) => (
                     className={className}
                     fluid={imageData}
                     backgroundColor={`#040e18`}
-                />
+                >
+                    <Jumbotron className="indexJumbotron">
+                        <Container>
+                            <Row><br></br></Row>
+                            <Row>
+                                <h1>Hi, I'm Lyndon.</h1>
+                            </Row>
+                        </Container>
+                    </Jumbotron>
+                </BackgroundImage>
             );
         }}
     />

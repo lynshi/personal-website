@@ -34,3 +34,18 @@
         background-color: $success !important;
     }
 }
+
+.indexJumbotron {
+    background-color: transparent !important;
+}
+
+h1 {
+    color: $success;
+}
+
+.indexJumbotron h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
