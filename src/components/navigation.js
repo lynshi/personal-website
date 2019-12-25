@@ -15,7 +15,7 @@ class Navigation extends React.Component {
     }
 
     scrollListener() {
-        const isTop = window.scrollY < 100;
+        const isTop = window.scrollY < 10;
         if (isTop !== this.state.isTop) {
             this.setState({ isTop });
         }

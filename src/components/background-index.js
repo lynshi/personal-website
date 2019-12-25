@@ -9,6 +9,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import Typist from "react-typist";
+
 const IndexBackground = ({ className }) => (
     <StaticQuery
         query={graphql`
@@ -39,10 +41,19 @@ const IndexBackground = ({ className }) => (
                             </Row>
                             <Row>
                                 <Col>
-                                <h1>Hi, I'm Lyndon.</h1>
-                                <h2>Developer | CS @ UMich</h2>
-                                <h2>Machine Learning | Algorithms</h2>
-                                <h2>Smash Ultimate | Fantasy Football</h2>
+                                    <Typist cursor={{ show: false }} startDelay="100">
+                                        <h1>Hi, I'm Lyndon.</h1>
+                                        <h2>Developer</h2>
+                                        <h2>CS @ UMich</h2>
+                                    </Typist>
+                                    <Typist cursor={{ show: false }} startDelay="3200">
+                                        <h2>Machine Learning | Algorithms</h2>
+                                    </Typist>
+                                    <Typist cursor={{ show: false }} startDelay="3200">
+                                        <h2>
+                                            Smash Ultimate | Fantasy Football
+                                        </h2>
+                                    </Typist>
                                 </Col>
                             </Row>
                         </Container>
