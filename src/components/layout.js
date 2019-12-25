@@ -14,7 +14,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 import Header from "./header";
-import "../style.scss";
+
+import "../style.scss"
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
