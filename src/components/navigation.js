@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
-class Header extends React.Component {
+class Navigation extends React.Component {
     state = {
         isTop: true
     };
@@ -46,12 +46,12 @@ class Header extends React.Component {
     }
 }
 
-Header.propTypes = {
+Navigation.propTypes = {
     siteTitle: PropTypes.string
 };
 
-Header.defaultProps = {
+Navigation.defaultProps = {
     siteTitle: ``
 };
 
-export default Header;
+export default Navigation;

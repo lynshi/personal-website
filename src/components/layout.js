@@ -13,9 +13,9 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-import Header from "./header";
+import Navigation from "./navigation";
 
-import "../style.scss"
+import "../style.scss";
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -30,11 +30,11 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <Container fluid="true">
+            <Navigation siteTitle={data.site.siteMetadata.title} />
+            <main>{children}</main>
+            <Container>
                 <Row>
                     <Col>
-                        <main>{children}</main>
                         <footer>
                             © {new Date().getFullYear()}, Built with
                             {` `}
