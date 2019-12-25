@@ -41,7 +41,7 @@ const IndexBackground = ({ className }) => (
                                 <Col>
                                 <h1>Hi, I'm Lyndon.</h1>
                                 <h2>Developer | CS @ UMich</h2>
-                                <h2>Machine Learnign | Algorithms</h2>
+                                <h2>Machine Learning | Algorithms</h2>
                                 <h2>Smash Ultimate | Fantasy Football</h2>
                                 </Col>
                             </Row>
