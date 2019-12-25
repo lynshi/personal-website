@@ -3,5 +3,35 @@
 @import "../node_modules/bootswatch/dist/darkly/bootswatch";
 
 .brandText {
-    color: #000000 !important;
+    color: $white !important;
+}
+
+.brandText:hover {
+    color: $white !important;
+    text-decoration: none !important;
+}
+
+.navLink:hover {
+    color: $pink !important;
+}
+
+.navbarTop {
+    position: sticky;
+    &.navbar {
+        background-color: transparent !important;
+    }
+    
+    &.navbar-light .navbar-nav {
+        .nav-link:focus,
+        .nav-link:hover,
+        .active > .nav-link {
+            color: $pink !important;
+        }
+    }
+}
+
+.navbarScrolled {
+    &.navbar {
+        background-color: $success !important;
+    }
 }
