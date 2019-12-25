@@ -26,19 +26,7 @@ const IndexBackground = ({ className }) => (
                     className={className}
                     fluid={imageData}
                     backgroundColor={`#040e18`}
-                >
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                    <h2>gatsby-background-image</h2>
-                </BackgroundImage>
+                />
             );
         }}
     />
@@ -46,9 +34,11 @@ const IndexBackground = ({ className }) => (
 
 const StyledIndexBackground = styled(IndexBackground)`
     width: 100%;
-    background-position: bottom center;
+    background-position: 50% 28.5%;
     background-repeat: repeat-y;
     background-size: cover;
+    background-attachment: fixed;
+    height: 75vh;
 `;
 
-export { StyledIndexBackground };
+export default StyledIndexBackground;

@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import StyledIndexBackground from "../components/background-index"
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" />
+        <StyledIndexBackground />
         <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
             <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
             <p>
