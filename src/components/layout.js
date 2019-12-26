@@ -15,7 +15,7 @@ import Row from "react-bootstrap/Row";
 
 import Navigation from "./navigation";
 
-import "../style.scss";
+import "../styles/style.scss";
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
