@@ -1,60 +1,31 @@
 import React from "react";
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import StyledIndexBackground from "../components/background-index"
+
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
+import AboutMe from "../components/about-me"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import StyledIndexBackground from "../components/background-index";
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" />
         <StyledIndexBackground />
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div><div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
-        <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-            <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy
-                building websites.
-            </p>
-        </div>
+        <Container>
+            <Row>
+                <br></br>
+            </Row>
+            <Row>
+                <Col className="center-block">
+                    <AboutMe />
+                </Col>
+                <Col className="center-block" xs={3}>
+                    
+                </Col>
+            </Row>
+        </Container>
     </Layout>
 );
 

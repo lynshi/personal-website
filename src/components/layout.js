@@ -34,6 +34,9 @@ const Layout = ({ children }) => {
             <main>{children}</main>
             <Container>
                 <Row>
+                    <br />
+                </Row>
+                <Row>
                     <Col>
                         <footer>
                             © Lyndon Shi {new Date().getFullYear()}, Built with

@@ -28,7 +28,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <Navbar bg="primary" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop ? "navbarNotScrolled" : "")}>
+            <Navbar bg="primary" variant="dark" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop ? "navbarNotScrolled" : "")}>
                 <Navbar.Brand>
                     <Link to="/" className="brandText">
                         {this.siteTitle}

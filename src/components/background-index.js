@@ -37,20 +37,29 @@ const IndexBackground = ({ className }) => (
                     <Jumbotron className="indexJumbotron">
                         <Container>
                             <Row>
-                                <br></br>
-                                <br></br>
-                                <br></br>
+                                <br />
+                                <br />
+                                <br />
                             </Row>
                             <Row>
                                 <Col>
-                                    <Typist cursor={{ show: false }} startDelay="100">
+                                    <Typist
+                                        cursor={{ show: false }}
+                                        startDelay="100"
+                                    >
                                         <h1>Hi, I'm Lyndon.</h1>
                                         <h3>Developer | CS @ UMich</h3>
                                     </Typist>
-                                    <Typist cursor={{ show: false }} startDelay="3200">
+                                    <Typist
+                                        cursor={{ show: false }}
+                                        startDelay="3200"
+                                    >
                                         <h3>Machine Learning | Algorithms</h3>
                                     </Typist>
-                                    <Typist cursor={{ show: false }} startDelay="3200">
+                                    <Typist
+                                        cursor={{ show: false }}
+                                        startDelay="3200"
+                                    >
                                         <h3>
                                             Smash Ultimate | Fantasy Football
                                         </h3>
@@ -67,11 +76,11 @@ const IndexBackground = ({ className }) => (
 
 const StyledIndexBackground = styled(IndexBackground)`
     width: 100%;
-    background-position: 50% 23.5%;
+    background-position: 50% 28.5%;
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 80vh;
+    min-height: 70vh;
 `;
 
 export default StyledIndexBackground;
