@@ -16,7 +16,7 @@
 }
 
 .navbarTop {
-    &.navbar-light .navbar-nav {
+    &.navbar-primary .navbar-nav {
         .nav-link:focus,
         .nav-link:hover,
         .active > .nav-link {
@@ -45,4 +45,11 @@ h3 {
 .indexJumbotron h3 {
     font-weight: bold;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .navbarNotScrolled {
+        background-color: transparent !important;
+        transition: background-color 200ms linear;
+    }
 }
