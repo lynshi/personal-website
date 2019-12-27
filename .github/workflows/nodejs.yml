@@ -1,0 +1,33 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+  
+    - name: npm install
+      run: npm install
+
+    - name: gatsby build
+      run: gatsby build
+    
+    - name: Azure upload
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          az storage blob delete-batch -s "\$web" --connection-string ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          az storage blob upload-batch -d "\$web" -s public --connection-string ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
