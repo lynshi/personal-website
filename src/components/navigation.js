@@ -11,6 +11,7 @@ class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.siteTitle = props.siteTitle;
+        this.state.isResume = props.isResume;
         this.scrollListener = this.scrollListener.bind(this);
     }
 
@@ -28,7 +29,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <Navbar bg="primary" variant="dark" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop ? "navbarNotScrolled" : "")}>
+            <Navbar bg="primary" variant="dark" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop && !this.state.isResume ? "navbarNotScrolled" : "")}>
                 <Navbar.Brand>
                     <Link to="/" className="brandText">
                         {this.siteTitle}

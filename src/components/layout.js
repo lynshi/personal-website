@@ -17,7 +17,7 @@ import Navigation from "./navigation";
 
 import "../style.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isResume }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Navigation siteTitle={data.site.siteMetadata.title} />
+            <Navigation siteTitle={data.site.siteMetadata.title} isResume={isResume} />
             <main>{children}</main>
             <Container>
                 <Row>
