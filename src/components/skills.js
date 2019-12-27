@@ -11,29 +11,20 @@ import CppIcon from "./icons/cplusplus";
 // import GoIcon from "./icons/go";
 import PostgresIcon from "./icons/postgres";
 import PythonIcon from "./icons/python";
+import { ProgressBar } from "react-bootstrap";
+import SkillProgress from "./skill-progress";
 
 const Skills = () => (
     <Card className="bg-primary text-white" style={{ width: "100%" }}>
         <Card.Body>
-            <Card.Title className="text-center">Skills</Card.Title>
+            <Card.Title>Skills</Card.Title>
             <Card.Text>
                 <Container>
-                    <Row>
-                        <Icon>
-                            <AWSIcon />
-                        </Icon>
-                        <Icon>
-                            <CppIcon />
-                        </Icon>
-                        <Icon>
-                            <PostgresIcon />
-                        </Icon>
-                        <Col></Col>
-                        <Icon>
-                            <PythonIcon />
-                        </Icon>
-                        <Col></Col>
-                    </Row>
+                    <SkillProgress
+                        skillName="C++"
+                        skillValue={80}
+                        barVariant="success"
+                    />
                 </Container>
             </Card.Text>
         </Card.Body>
