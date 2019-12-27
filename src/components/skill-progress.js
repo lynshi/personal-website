@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 
 const SkillProgress = ({ skillName, skillValue, barVariant }) => (
     <Row>
-        <Col md={4} xs={12}>
+        <Col md={5} xs={12}>
             {skillName}
         </Col>
         <Col>

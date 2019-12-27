@@ -21,15 +21,15 @@ const IndexPage = () => (
                 <Col className="center-block">
                     <AboutMe />
                 </Col>
-                <Col className="center-block" md={3} xs={12}>
+                <Col className="center-block" xl={3} lg={3} md={3} s={12} xs={12}>
                     <Skills />
                 </Col>
             </Row>
             <Row className="marginTop">
-                <Col className="center-block" md={6} xs={12}>
+                <Col className="center-block" xl={6} lg={6} md={6} s={12} xs={12}>
                     <Work />
                 </Col>
-                <Col className="center-block" md={6} xs={12}>
+                <Col className="center-block" xl={6} lg={6} md={6} s={12} xs={12}>
                     <Academic />
                 </Col>
             </Row>
