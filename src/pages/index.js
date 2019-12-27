@@ -9,7 +9,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Skills from "../components/skills"
 import StyledIndexBackground from "../components/background-index";
-import Experience from "../components/experience";
+import Work from "../components/work";
 import Academic from "../components/academic";
 
 const IndexPage = () => (
@@ -26,10 +26,10 @@ const IndexPage = () => (
                 </Col>
             </Row>
             <Row className="marginTop">
-                <Col className="center-block" md={6} sm={12} xs={12}>
-                    <Experience />
+                <Col className="center-block" md={6} xs={12}>
+                    <Work />
                 </Col>
-                <Col className="center-block" md={6} sm={12} xs={12}>
+                <Col className="center-block" md={6} xs={12}>
                     <Academic />
                 </Col>
             </Row>

@@ -1,14 +1,14 @@
 import React from "react";
-import Card from "react-bootstrap/Card"
+import BootstrapCard from "react-bootstrap/Card"
 
-const ExperienceCard = ({ companyName, positionName, highlights, children }) => (
-    <Card className="border-primary experienceCard">
-        <Card.Header>Experience</Card.Header>
-        <Card.Body>
-            <Card.Title className="experienceTitle">
-                {companyName}
-            </Card.Title>
-            <Card.Text>
+const Card = ({ header, experienceTitle, positionName, highlights, border, children }) => (
+    <BootstrapCard className={{border} + " experienceCard"}>
+        <BootstrapCard.Header>{header}</BootstrapCard.Header>
+        <BootstrapCard.Body>
+            <BootstrapCard.Title className="experienceTitle">
+                {experienceTitle}
+            </BootstrapCard.Title>
+            <BootstrapCard.Text>
                 <span className="experiencePosition">
                     {positionName}
                 </span>
@@ -16,12 +16,12 @@ const ExperienceCard = ({ companyName, positionName, highlights, children }) => 
                 <br />
 
                 {children}
-            </Card.Text>
-        </Card.Body>
-        <Card.Footer>
+            </BootstrapCard.Text>
+        </BootstrapCard.Body>
+        <BootstrapCard.Footer>
             {highlights}
-        </Card.Footer>
-    </Card>
+        </BootstrapCard.Footer>
+    </BootstrapCard>
 );
 
-export default ExperienceCard;
+export default Card;
