@@ -5,25 +5,15 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Experience = () => (
-    <Accordion defaultActiveKey="0">
+    <Accordion>
         <Card>
-            <Card.Header>
+            <Card.Header className="noChange">
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
                     Click me!
                 </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
                 <Card.Body>Hello! I'm the body</Card.Body>
-            </Accordion.Collapse>
-        </Card>
-        <Card>
-            <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    Click me!
-                </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="1">
-                <Card.Body>Hello! I'm another body</Card.Body>
             </Accordion.Collapse>
         </Card>
     </Accordion>

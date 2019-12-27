@@ -55,3 +55,10 @@
 .marginTop {
     margin-top: 1%;
 }
+
+.noChange, .noChange:active, .noChange:focus, .noChange:hover {
+    color: inherit;
+    text-decoration: none;
+    background-color: none !important;
+    background: none !important;
+}
