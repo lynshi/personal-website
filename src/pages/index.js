@@ -22,7 +22,7 @@ const IndexPage = () => (
                 <Col className="center-block">
                     <AboutMe />
                 </Col>
-                <Col className="center-block" xs={3}>
+                <Col className="center-block" xl={3} md={3} sm={12} xs={12}>
                     <Skills />
                 </Col>
             </Row>
