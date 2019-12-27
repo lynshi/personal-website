@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card"
 
-const ExperienceCard = ({ courseName, positionName, children }) => (
-    <Card className="bg-light border-secondary experienceCard">
-        <Card.Header>Experience</Card.Header>
+const AcademicCard = ({ experienceTitle, positionName, highlights, children }) => (
+    <Card className="border-secondary experienceCard">
+        <Card.Header>Teaching and Research</Card.Header>
         <Card.Body>
             <Card.Title className="experienceTitle">
-                {courseName}
+                {experienceTitle}
             </Card.Title>
             <Card.Text>
                 <span className="experiencePosition">
@@ -15,10 +15,13 @@ const ExperienceCard = ({ courseName, positionName, children }) => (
 
                 <br />
 
-                {children   }
+                {children}
             </Card.Text>
         </Card.Body>
+        <Card.Footer>
+            {highlights}
+        </Card.Footer>
     </Card>
 );
 
-export default ExperienceCard;
+export default AcademicCard;

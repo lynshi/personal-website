@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card"
 
-const ExperienceCard = ({ companyName, positionName, children }) => (
-    <Card className="bg-light border-primary experienceCard">
+const ExperienceCard = ({ companyName, positionName, highlights, children }) => (
+    <Card className="border-primary experienceCard">
         <Card.Header>Experience</Card.Header>
         <Card.Body>
             <Card.Title className="experienceTitle">
@@ -15,9 +15,12 @@ const ExperienceCard = ({ companyName, positionName, children }) => (
 
                 <br />
 
-                {children   }
+                {children}
             </Card.Text>
         </Card.Body>
+        <Card.Footer>
+            {highlights}
+        </Card.Footer>
     </Card>
 );
 
