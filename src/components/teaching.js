@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Carousel from "react-bootstrap/Carousel";
 
-import ExperienceCard from "./experience-card"
+import TeachingCard from "./teaching-card"
 
 const Experience = () => {
     const [index, setIndex] = useState(0);
@@ -18,14 +18,9 @@ const Experience = () => {
     return (
         <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={false} nextIcon={null} prevIcon={null}>
             <Carousel.Item>
-                <ExperienceCard companyName="Capital One" positionName="Software Engineer Intern">
+                <TeachingCard courseName="EECS 477 (UMich)" positionName="Instructional Aide">
                     Test
-                </ExperienceCard>
-            </Carousel.Item>
-            <Carousel.Item>
-                <ExperienceCard companyName="University of Michigan Transportation Research Institute" positionName="Assistant in Research">
-                    Test
-                </ExperienceCard>
+                </TeachingCard>
             </Carousel.Item>
         </Carousel>
     );

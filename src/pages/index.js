@@ -10,6 +10,7 @@ import SEO from "../components/seo";
 import Skills from "../components/skills"
 import StyledIndexBackground from "../components/background-index";
 import Experience from "../components/experience";
+import Teaching from "../components/teaching";
 
 const IndexPage = () => (
     <Layout>
@@ -20,13 +21,16 @@ const IndexPage = () => (
                 <Col className="center-block">
                     <AboutMe />
                 </Col>
-                <Col className="center-block" xl={3} md={3} sm={12} xs={12}>
+                <Col className="center-block" md={3} xs={12}>
                     <Skills />
                 </Col>
             </Row>
             <Row className="marginTop">
-                <Col>
+                <Col className="center-block" md={6} sm={12} xs={12}>
                     <Experience />
+                </Col>
+                <Col className="center-block" md={6} sm={12} xs={12}>
+                    <Teaching />
                 </Col>
             </Row>
         </Container>
