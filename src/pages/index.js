@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import AboutMe from "../components/about-me"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Skills from "../components/skills"
 import StyledIndexBackground from "../components/background-index";
 
 const IndexPage = () => (
@@ -22,7 +23,7 @@ const IndexPage = () => (
                     <AboutMe />
                 </Col>
                 <Col className="center-block" xs={3}>
-                    
+                    <Skills />
                 </Col>
             </Row>
         </Container>
