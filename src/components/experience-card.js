@@ -5,7 +5,7 @@ const Card = ({ header, experienceTitle, positionName, highlights, border, child
     <BootstrapCard className={{border} + " experienceCard"}>
         <BootstrapCard.Header>{header}</BootstrapCard.Header>
         <BootstrapCard.Body>
-            <BootstrapCard.Title className="experienceTitle">
+            <BootstrapCard.Title className="text-center experienceTitle">
                 {experienceTitle}
             </BootstrapCard.Title>
             <BootstrapCard.Text>

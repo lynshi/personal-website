@@ -20,7 +20,6 @@ class Navigation extends React.Component {
         if (isTop !== this.state.isTop) {
             this.setState({ isTop });
         }
-        console.log("scrolled");
     }
 
     componentDidMount() {
