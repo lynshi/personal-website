@@ -9,21 +9,24 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Skills from "../components/skills"
 import StyledIndexBackground from "../components/background-index";
+import Experience from "../components/experience";
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" />
         <StyledIndexBackground />
         <Container>
-            <Row>
-                <br></br>
-            </Row>
-            <Row>
+            <Row className="marginTop">
                 <Col className="center-block">
                     <AboutMe />
                 </Col>
                 <Col className="center-block" xl={3} md={3} sm={12} xs={12}>
                     <Skills />
+                </Col>
+            </Row>
+            <Row className="marginTop">
+                <Col>
+                    <Experience />
                 </Col>
             </Row>
         </Container>

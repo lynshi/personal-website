@@ -6,12 +6,7 @@ import Container from "react-bootstrap/Container";
 const Resume = () => (
     <Layout isResume={true}>
         <Container>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <center>
+            <center style={{marginTop: "25vh"}}>
                 <iframe
                     src="https://drive.google.com/file/d/1ZPBlG9RXX9-cW5WLZ6PoRG4vQcm1fPRC/preview"
                     width="100%"
