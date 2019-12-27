@@ -18,10 +18,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
   
-    - name: npm install
-      run: npm install
+    - name: Install dependencies
+      run: |
+        npm install
+        npm install -g gatsby-cli
 
-    - name: gatsby build
+    - name: Build with Gatsby
       run: gatsby build
     
     - name: Azure upload
