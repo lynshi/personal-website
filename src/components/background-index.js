@@ -36,12 +36,7 @@ const IndexBackground = ({ className }) => (
                 >
                     <Jumbotron className="indexJumbotron">
                         <Container>
-                            <Row>
-                                <br />
-                                <br />
-                                <br />
-                            </Row>
-                            <Row>
+                            <Row className="jumbotronMarginTop">
                                 <Col>
                                     <Typist
                                         cursor={{ show: false }}
