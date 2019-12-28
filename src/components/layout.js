@@ -14,7 +14,11 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+    faGithubSquare,
+    faLinkedin,
+    faMedium
+} from "@fortawesome/free-brands-svg-icons";
 
 import Navigation from "./navigation";
 
@@ -55,6 +59,17 @@ const Layout = ({ children, isResume }) => {
                     <Col>
                         <div className="text-right">
                             <h2>
+                                <a
+                                    href="https://medium.com/@shilyndon"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faMedium}
+                                        className="text-center socialIcon"
+                                    />
+                                </a>
+                                &nbsp;
                                 <a
                                     href="https://github.com/lynshi"
                                     target="_blank"
