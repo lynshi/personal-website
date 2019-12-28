@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { faAws, faPython } from "@fortawesome/free-brands-svg-icons";
 
-import Icon from "./icon";
+import SkillIcon from "./skill-icon";
 
 const Skills = () => (
     <Card className="bg-primary text-white" style={{ width: "100%" }}>
@@ -16,10 +16,10 @@ const Skills = () => (
             <Card.Text>
                 <Container>
                     <Row>
-                        <Icon icon={faAws} iconName="AWS" />
-                        <Icon icon={faLaptopCode} iconName="C++" />
-                        <Icon icon={faPython} iconName="Python" />
-                        <Icon icon={faDatabase} iconName="SQL" />
+                        <SkillIcon icon={faAws} iconName="AWS" />
+                        <SkillIcon icon={faLaptopCode} iconName="C++" />
+                        <SkillIcon icon={faPython} iconName="Python" />
+                        <SkillIcon icon={faDatabase} iconName="SQL" />
                     </Row>
                 </Container>
             </Card.Text>
