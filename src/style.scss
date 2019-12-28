@@ -71,6 +71,18 @@
     width: 100%;
 }
 
+@media only screen and (max-device-width: 768px) {
+    .experienceCard {
+        min-height: 80vh !important;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .experienceCard {
+        min-height: 58vh !important;
+    }
+}
+
 .skillIcon {
     color: $success;
 }
