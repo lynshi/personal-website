@@ -60,17 +60,6 @@ const Layout = ({ children, isResume }) => {
                         <div className="text-right">
                             <h2>
                                 <a
-                                    href="https://medium.com/@shilyndon"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faMedium}
-                                        className="text-center socialIcon"
-                                    />
-                                </a>
-                                &nbsp;
-                                <a
                                     href="https://github.com/lynshi"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -88,6 +77,17 @@ const Layout = ({ children, isResume }) => {
                                 >
                                     <FontAwesomeIcon
                                         icon={faLinkedin}
+                                        className="text-center socialIcon"
+                                    />
+                                </a>
+                                &nbsp;
+                                <a
+                                    href="https://medium.com/@shilyndon"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faMedium}
                                         className="text-center socialIcon"
                                     />
                                 </a>
