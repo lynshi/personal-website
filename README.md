@@ -1,5 +1,5 @@
 # lynshi.github.io
-Personal website, written using React and [Gatsby.js](https://www.gatsbyjs.org/). Deployed at [me.lynshi.com](https://me.lynshi.com).
+Personal website, written using React and [Gatsby.js](https://www.gatsbyjs.org/). View it online at [me.lynshi.com](https://me.lynshi.com).
 
 ## Running
 1. Clone this repository.
