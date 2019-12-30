@@ -33,3 +33,11 @@ jobs:
         inlineScript: |
           az storage blob delete-batch -s "\$web" --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}"
           az storage blob upload-batch -d "\$web" -s public --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}"
+
+    - name: Azure CDN purge
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - run:
+        az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths /* --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --no-wait
