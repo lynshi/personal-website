@@ -44,6 +44,6 @@ jobs:
         az cdn endpoint list --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
         az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths /* --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --no-wait
 
-    - name: Azure logout
+    - name: Azure service principal logout
       run: |
         az logout
