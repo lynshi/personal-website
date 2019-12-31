@@ -71,6 +71,10 @@
     width: 100%;
 }
 
+.experienceCardLink {
+    color: $danger !important;
+}
+
 @media only screen and (max-device-width: 768px) {
     .experienceCard {
         min-height: 80vh !important;

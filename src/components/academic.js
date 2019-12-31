@@ -42,11 +42,17 @@ const Academic = () => (
             >
                 Researched optimization problems related to optimal power flow.
                 Specifically,{" "}
-                <a href="https://arxiv.org/pdf/1807.05460.pdf">
+                <a
+                    href="https://arxiv.org/pdf/1807.05460.pdf"
+                    className="experienceCardLink"
+                >
                     compared optimal power flow models on congested networks
                 </a>
                 , and implemented a{" "}
-                <a href="https://ieeexplore.ieee.org/abstract/document/8854890">
+                <a
+                    href="https://ieeexplore.ieee.org/abstract/document/8854890"
+                    className="experienceCardLink"
+                >
                     differential privacy model
                 </a>{" "}
                 to produce realistic test networks from existing datasets.
@@ -65,7 +71,9 @@ const Academic = () => (
                 positionName="Kiluk Proof Tutor (Fall 2018, Winter 2019)"
             >
                 MATH 217 is the first proof-based, rigorous course in the
-                undergraduate mathematics curriculum. Kiluk Proof Tutors tutor students on how to write proofs in clear and concise mathematical language.
+                undergraduate mathematics curriculum. Kiluk Proof Tutors tutor
+                students on how to write proofs in clear and concise
+                mathematical language.
             </AcademicCard>
         </Carousel.Item>
         <Carousel.Item>
@@ -102,7 +110,10 @@ const Academic = () => (
                 highlights="Python"
             >
                 Developed a{" "}
-                <a href="https://events.esd.org/wp-content/uploads/2018/08/A-Two-Stage-Deep-Learning-Approach-for-Can-Intrusion-Detection.pdf">
+                <a
+                    href="https://events.esd.org/wp-content/uploads/2018/08/A-Two-Stage-Deep-Learning-Approach-for-Can-Intrusion-Detection.pdf"
+                    className="experienceCardLink"
+                >
                     deep-learning-based intrusion detection system
                 </a>{" "}
                 for the automotive CAN bus.
