@@ -24,7 +24,7 @@ import Navigation from "./navigation";
 
 import "../style.scss";
 
-const Layout = ({ children, isResume }) => {
+const Layout = ({ children, transparentAtTop }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -39,7 +39,7 @@ const Layout = ({ children, isResume }) => {
         <>
             <Navigation
                 siteTitle={data.site.siteMetadata.title}
-                isResume={isResume}
+                transparentAtTop={transparentAtTop}
             />
             <main>{children}</main>
             <Container>

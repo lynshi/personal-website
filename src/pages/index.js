@@ -13,7 +13,7 @@ import Work from "../components/work";
 import Academic from "../components/academic";
 
 const IndexPage = () => (
-    <Layout>
+    <Layout transparentAtTop={true}>
         <SEO title="Home" />
         <StyledIndexBackground />
         <Container>

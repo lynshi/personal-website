@@ -75,9 +75,17 @@
     color: $danger !important;
 }
 
+.marginForNavbar {
+    margin-top: 20vh;
+}
+
 @media only screen and (max-device-width: 1024px) {
     .experienceCard {
         min-height: 43vh !important;
+    }
+
+    .marginForNavbar {
+        margin-top: 10vh;
     }
 }
 
@@ -85,11 +93,19 @@
     .experienceCard {
         min-height: 25vh !important;
     }
+
+    .marginForNavbar {
+        margin-top: 10vh;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
     .experienceCard {
         min-height: 48vh !important;
+    }
+
+    .marginForNavbar {
+        margin-top: 12vh;
     }
 }
 

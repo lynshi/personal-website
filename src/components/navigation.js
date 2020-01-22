@@ -11,7 +11,7 @@ class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.siteTitle = props.siteTitle;
-        this.state.isResume = props.isResume;
+        this.state.transparentAtTop = props.transparentAtTop;
         this.scrollListener = this.scrollListener.bind(this);
     }
 
@@ -28,7 +28,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <Navbar bg="primary" variant="dark" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop && !this.state.isResume ? "navbarNotScrolled" : "")}>
+            <Navbar bg="primary" variant="dark" expand="lg" fixed="top" className={"navbarTop " + (this.state.isTop && this.state.transparentAtTop ? "navbarNotScrolled" : "")}>
                 <Navbar.Brand>
                     <Link to="/" className="brandText">
                         {this.siteTitle}
