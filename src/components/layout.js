@@ -53,7 +53,7 @@ const Layout = ({ children, transparentAtTop }) => {
                             {` `}
                             <a href="https://www.gatsbyjs.org">
                                 Gatsby
-                            </a> and <a href="https://reactjs.org/">React, hosted on Microsoft Azure.</a>
+                            </a> and <a href="https://reactjs.org/">React</a>, hosted on <a href="https://azure.microsoft.com/en-us/">Microsoft Azure</a>.
                         </footer>
                     </Col>
                     <Col>
