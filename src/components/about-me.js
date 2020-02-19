@@ -6,7 +6,7 @@ const AboutMe = () => (
         <Card.Body>
             <Card.Title>About Me</Card.Title>
             <Card.Text>
-                I graduated from the University of Michigan with a B.S.E. in Computer Science in December 2019. Starting in February 2020, I will be working at Microsoft.
+                I graduated from the University of Michigan with a B.S.E. in Computer Science in December 2019. In February 2020, I started working at Microsoft.
 
                 <br />
                 <br />

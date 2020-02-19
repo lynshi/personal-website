@@ -49,11 +49,11 @@ const Layout = ({ children, transparentAtTop }) => {
                 <Row>
                     <Col>
                         <footer>
-                            © Lyndon Shi {new Date().getFullYear()}, Built with
+                            © Lyndon Shi {new Date().getFullYear()}. Built with
                             {` `}
                             <a href="https://www.gatsbyjs.org">
                                 Gatsby
-                            </a> and <a href="https://reactjs.org/">React</a>
+                            </a> and <a href="https://reactjs.org/">React, hosted on Microsoft Azure.</a>
                         </footer>
                     </Col>
                     <Col>
