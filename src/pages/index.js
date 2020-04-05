@@ -21,7 +21,7 @@ const IndexPage = () => (
                 <Col className="center-block">
                     <AboutMe />
                 </Col>
-                <Col className="center-block" xl={3} lg={3} md={12} s={12} xs={12}>
+                <Col className="center-block" xs={12}>
                     <Skills />
                 </Col>
             </Row>
