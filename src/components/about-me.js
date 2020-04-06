@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 const AboutMe = () => (
-    <Card className="bg-dark text-white" style={{ width: "100%" }}>
+    <Card className="aboutMeCard" style={{ width: "100%" }}>
         <Card.Body>
             <Card.Title>About Me</Card.Title>
             <Card.Text>

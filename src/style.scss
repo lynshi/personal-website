@@ -2,6 +2,22 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootswatch/dist/lux/bootswatch";
 
+$darkgrey: #404040;
+$offwhite: #e0e0eb;
+
+body {
+    background-color: $black;
+}
+
+a {
+    color: darkslategrey;
+}
+
+.aboutMeCard {
+    background-color: $offwhite;
+    color: $darkgrey;
+}
+
 .brandText {
     color: $white !important;
 }
@@ -69,6 +85,8 @@
 .experienceCard {
     min-height: 47vh;
     width: 100%;
+    background-color: $offwhite;
+    color: $darkgrey;
 }
 
 .experienceCardLink {
@@ -118,5 +136,5 @@
 }
 
 .socialIcon {
-    color: $primary;
+    color: $info;
 }
