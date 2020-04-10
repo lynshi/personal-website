@@ -26,10 +26,10 @@ const IndexPage = () => (
                 </Col>
             </Row>
             <Row className="marginTop">
-                <Col className="center-block" xl={6} lg={6} md={12} s={12} xs={12}>
+                <Col className="center-block" xl={6} lg={6} md={12} sm={12} xs={12}>
                     <Work />
                 </Col>
-                <Col className="center-block" xl={6} lg={6} md={12} s={12} xs={12}>
+                <Col className="center-block" xl={6} lg={6} md={12} sm={12} xs={12}>
                     <Academic />
                 </Col>
             </Row>
