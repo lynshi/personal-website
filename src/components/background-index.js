@@ -56,7 +56,7 @@ const IndexBackground = ({ className }) => (
                                         startDelay={3200}
                                     >
                                         <h3>
-                                            UMich CS '19'
+                                            UMich CS '19
                                         </h3>
                                     </Typist>
                                 </Col>

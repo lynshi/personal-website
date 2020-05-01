@@ -19,6 +19,7 @@ const Skills = () => (
                         <SkillIcon icon={faAws} iconName="AWS" />
                         <SkillIcon icon={faMicrosoft} iconName="Azure" />
                         <SkillIcon icon={faLaptopCode} iconName="C++" />
+                        <SkillIcon icon={faLaptopCode} iconName="Go" />
                         <SkillIcon icon={faPython} iconName="Python" />
                         <SkillIcon icon={faDatabase} iconName="SQL" />
                     </Row>
