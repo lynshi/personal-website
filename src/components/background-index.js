@@ -43,20 +43,20 @@ const IndexBackground = ({ className }) => (
                                         startDelay={100}
                                     >
                                         <h1>Hi, I'm Lyndon.</h1>
-                                        <h3>Developer | CS @ UMich</h3>
+                                        <h3>Software Engineer</h3>
                                     </Typist>
                                     <Typist
                                         cursor={{ show: false }}
                                         startDelay={3200}
                                     >
-                                        <h3>Machine Learning | Algorithms</h3>
+                                        <h3>Microsoft</h3>
                                     </Typist>
                                     <Typist
                                         cursor={{ show: false }}
                                         startDelay={3200}
                                     >
                                         <h3>
-                                            Smash Ultimate | Fantasy Football
+                                            UMich CS '19'
                                         </h3>
                                     </Typist>
                                 </Col>

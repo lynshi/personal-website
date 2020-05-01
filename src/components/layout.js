@@ -47,17 +47,19 @@ const Layout = ({ children, transparentAtTop }) => {
                     <br />
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={9}>
+                        <Row>
                         <footer>
                             © Lyndon Shi {new Date().getFullYear()}. Built with
                             {` `}
                             <a href="https://www.gatsbyjs.org">
                                 Gatsby
-                            </a> and <a href="https://reactjs.org/">React</a>, hosted on <a href="https://azure.microsoft.com/en-us/">Microsoft Azure</a>.
-                        </footer>
+                            </a> and <a href="https://reactjs.org/">React</a>. View on <a href="https://github.com/lynshi/personal-website">GitHub</a>!
+                        </footer> 
+                        </Row>
                     </Col>
                     <Col>
-                        <div className="text-right">
+                        <Row className="float-right">
                             <h2>
                                 <a
                                     href="https://github.com/lynshi"
@@ -92,7 +94,7 @@ const Layout = ({ children, transparentAtTop }) => {
                                     />
                                 </a>
                             </h2>
-                        </div>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
