@@ -7,21 +7,16 @@ const AboutMe = () => (
             <Card.Title>About Me</Card.Title>
             <Card.Text>
                 <p>
-                    I graduated from the University of Michigan with a B.S.E. in 
-                    Computer Science in December 2019. In February 2020, I started 
-                    working at Microsoft in Azure Security.
+                    I'm a software engineer at Microsoft working in Azure Security. 
+                    Previously, I interned at Capital One in the Cyber division, 
+                    and worked on research in power systems optimization and 
+                    automotive cybersecurity.
                 </p>
 
                 <p>
-                    I'm interested in leveraging my research experience and 
-                    knowledge in machine learning, algorithms, and optimization to 
-                    improve cybersecurity and protect people's privacy.
-                </p>
-
-                <p>
-                    In my free time, I am often playing Smash Ultimate &#8212; 
-                    I main Sheik. I also dabble in fantasy football and 
-                    enjoy cooking.
+                    In my free time, I enjoy playing Smash Ultimate &#8212; 
+                    I main Sheik. I also dabble in fantasy football and enjoy 
+                    cooking.
                 </p>
             </Card.Text>
         </Card.Body>
