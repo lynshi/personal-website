@@ -11,6 +11,26 @@ const Work = () => (
             <WorkCard
                 companyName={
                     <a
+                        href="https://www.microsoft.com/en-us/"
+                        className="experienceTitle"
+                    >
+                        Microsoft
+                    </a>
+                }
+                positionName="Software Engineer (February 2020 - present)"
+                highlights="Go, Python"
+            >
+                Working on <a 
+                    href="https://azure.microsoft.com/en-us/solutions/confidential-compute/"
+                    className="experienceCardLink"
+                >
+                confidential compute</a> in Microsoft Azure.
+            </WorkCard>
+        </Carousel.Item>
+        <Carousel.Item>
+            <WorkCard
+                companyName={
+                    <a
                         href="https://www.capitalone.com/"
                         className="experienceTitle"
                     >
