@@ -1,7 +1,5 @@
 import React from "react";
 
-import { initializeIcons } from '@uifabric/icons';
-
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -13,8 +11,6 @@ import Skills from "../components/skills"
 import StyledIndexBackground from "../components/background-index";
 import Work from "../components/work";
 import Academic from "../components/academic";
-
-initializeIcons();
 
 const IndexPage = () => (
     <Layout transparentAtTop={true}>

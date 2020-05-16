@@ -5,9 +5,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faAws, faPython } from "@fortawesome/free-brands-svg-icons";
+import { faAws, faMicrosoft, faPython } from "@fortawesome/free-brands-svg-icons";
 
-import { FluentUISkillIcon, FontAwesomeSkillIcon } from "./skill-icon";
+import SkillIcon from "./skill-icon";
 
 const Skills = () => (
     <Card className="bg-primary text-white" style={{ width: "100%" }}>
@@ -16,12 +16,12 @@ const Skills = () => (
             <Card.Text>
                 <Container>
                     <Row className="justify-content-center">
-                        <FontAwesomeSkillIcon icon={faAws} iconName="AWS" />
-                        <FluentUISkillIcon icon={"AzureLogo"} iconName="Azure" />
-                        <FontAwesomeSkillIcon icon={faLaptopCode} iconName="C++" />
-                        <FontAwesomeSkillIcon icon={faLaptopCode} iconName="Go" />
-                        <FontAwesomeSkillIcon icon={faPython} iconName="Python" />
-                        <FontAwesomeSkillIcon icon={faDatabase} iconName="SQL" />
+                        <SkillIcon icon={faAws} iconName="AWS" />
+                        <SkillIcon icon={faMicrosoft} iconName="Azure" />
+                        <SkillIcon icon={faLaptopCode} iconName="C++" />
+                        <SkillIcon icon={faLaptopCode} iconName="Go" />
+                        <SkillIcon icon={faPython} iconName="Python" />
+                        <SkillIcon icon={faDatabase} iconName="SQL" />
                     </Row>
                 </Container>
             </Card.Text>
