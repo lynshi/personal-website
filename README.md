@@ -1,5 +1,4 @@
-# lynshi.github.io
-Personal website, written using React and [Gatsby.js](https://www.gatsbyjs.org/). It is currently hosted on Microsoft Azure; view it online at [me.lynshi.com](https://me.lynshi.com).
+My personal website, written using React and [Gatsby.js](https://www.gatsbyjs.org/).
 
 ## Running
 1. Clone this repository.
