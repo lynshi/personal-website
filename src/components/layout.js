@@ -50,11 +50,7 @@ const Layout = ({ children, transparentAtTop }) => {
                     <Col xs={9}>
                         <Row>
                         <footer>
-                            © Lyndon Shi {new Date().getFullYear()}. Built with
-                            {` `}
-                            <a href="https://www.gatsbyjs.org">
-                                Gatsby
-                            </a> and <a href="https://reactjs.org/">React</a>. View on <a href="https://github.com/lynshi/personal-website">GitHub</a>!
+                            © Lyndon Shi {new Date().getFullYear()}. View on <a href="https://github.com/lynshi/personal-website">GitHub</a>!
                         </footer> 
                         </Row>
                     </Col>

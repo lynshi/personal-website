@@ -20,11 +20,11 @@ const Work = () => (
                 positionName="Software Engineer (February 2020 - present)"
                 highlights="Go, Python"
             >
-                Working on <a 
+                Building services for <a 
                     href="https://azure.microsoft.com/en-us/solutions/confidential-compute/"
                     className="experienceCardLink"
                 >
-                confidential compute</a> in Microsoft Azure.
+                Azure confidential computing</a>.
             </WorkCard>
         </Carousel.Item>
         <Carousel.Item>

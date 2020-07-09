@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 import Row from "react-bootstrap/Row";
 
-import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode, faServer } from "@fortawesome/free-solid-svg-icons";
 import { faAws, faMicrosoft, faPython } from "@fortawesome/free-brands-svg-icons";
 
 import SkillIcon from "./skill-icon";
@@ -20,8 +20,8 @@ const Skills = () => (
                         <SkillIcon icon={faMicrosoft} iconName="Azure" />
                         <SkillIcon icon={faLaptopCode} iconName="C++" />
                         <SkillIcon icon={faLaptopCode} iconName="Go" />
+                        <SkillIcon icon={faServer} iconName="Kubernetes" />
                         <SkillIcon icon={faPython} iconName="Python" />
-                        <SkillIcon icon={faDatabase} iconName="SQL" />
                     </Row>
                 </Container>
             </Card.Text>
