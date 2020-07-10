@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0acee1eb-3181-4fd1-9150-9275cfe45888/deploy-status)](https://app.netlify.com/sites/lynshi/deploys)
+
 My personal website, written using React and [Gatsby.js](https://www.gatsbyjs.org/).
 
 ## Running
