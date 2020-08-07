@@ -20,7 +20,7 @@ const Work = () => (
                 positionName="Software Engineer (February 2020 - present)"
                 highlights="Azure, C++, Go, Kubernetes, Python"
             >
-                Building services for <a 
+                Building new services for <a 
                     href="https://azure.microsoft.com/en-us/solutions/confidential-compute/"
                     className="experienceCardLink"
                 >
