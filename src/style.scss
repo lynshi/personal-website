@@ -83,7 +83,7 @@ a {
 }
 
 .experienceCard {
-    min-height: 47vh;
+    height: 22rem;
     width: 100%;
     background-color: $offwhite;
     color: $darkgrey;
@@ -156,4 +156,11 @@ a {
 
 .socialIcon {
     color: $info;
+    font-size: 1.5rem;
+    align-content: center;
+}
+
+.footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }

@@ -46,7 +46,7 @@ const Layout = ({ children, transparentAtTop }) => {
                 <Row>
                     <br />
                 </Row>
-                <Row>
+                <Row className="footer">
                     <Col xs={9}>
                         <Row>
                         <footer>
