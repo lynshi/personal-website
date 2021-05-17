@@ -1,7 +1,9 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
+import { BgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -11,50 +13,52 @@ import Row from "react-bootstrap/Row";
 
 import Typist from "react-typist";
 
-const IndexBackground = ({ className }) => (
-  <StaticQuery
-    query={graphql`
-      {
-        desktop: file(relativePath: { eq: "artechouse.jpg" }) {
+const IndexBackground = ({ className }) => {
+  const { placeholderImage } = useStaticQuery(
+    graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "images/artechouse.jpg" }) {
           childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            gatsbyImageData(
+              placeholder: BLURRED
+              quality: 100
+              layout: FULL_WIDTH
+            )
           }
         }
       }
-    `}
-    render={(data) => {
-      // Set ImageData.
-      const imageData = data.desktop.childImageSharp.gatsbyImageData;
-      return (
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-        >
-          <Jumbotron className="indexJumbotron">
-            <Container>
-              <Row className="jumbotronMarginTop">
-                <Col>
-                  <Typist cursor={{ show: false }} startDelay={100}>
-                    <h1>Hi, I'm Lyndon.</h1>
-                    <h3>Software Engineer</h3>
-                  </Typist>
-                  <Typist cursor={{ show: false }} startDelay={3200}>
-                    <h3>Microsoft</h3>
-                  </Typist>
-                  <Typist cursor={{ show: false }} startDelay={3200}>
-                    <h3>UMich CS '19</h3>
-                  </Typist>
-                </Col>
-              </Row>
-            </Container>
-          </Jumbotron>
-        </BackgroundImage>
-      );
-    }}
-  />
-);
+    `
+  );
+  const pluginImage = getImage(placeholderImage);
+
+  return (
+    <BgImage
+      image={pluginImage}
+      Tag="section"
+      className={className}
+      backgroundColor={`#040e18`}
+    >
+      <Jumbotron className="indexJumbotron">
+        <Container>
+          <Row className="jumbotronMarginTop">
+            <Col>
+              <Typist cursor={{ show: false }} startDelay={100}>
+                <h1>Hi, I'm Lyndon.</h1>
+                <h3>Software Engineer</h3>
+              </Typist>
+              <Typist cursor={{ show: false }} startDelay={3200}>
+                <h3>Microsoft</h3>
+              </Typist>
+              <Typist cursor={{ show: false }} startDelay={3200}>
+                <h3>UMich CS '19</h3>
+              </Typist>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
+    </BgImage>
+  );
+};
 
 const StyledIndexBackground = styled(IndexBackground)`
   width: 100%;

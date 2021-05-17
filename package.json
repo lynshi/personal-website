@@ -32,6 +32,7 @@
     "gatsby-plugin-styled-components": "^4.5.0",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-sharp": "^3.5.0",
+    "gbimage-bridge": "^0.1.4",
     "node-sass": "^6.0.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.6.0",
