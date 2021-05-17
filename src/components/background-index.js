@@ -65,7 +65,7 @@ const StyledIndexBackground = styled(IndexBackground)`
   background-repeat: repeat-y;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 70vh;
+  min-height: 60vh;
 `;
 
 export default StyledIndexBackground;
