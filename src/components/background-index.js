@@ -4,7 +4,6 @@ import { getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import { BgImage } from "gbimage-bridge";
-import BackgroundImage from "gatsby-background-image";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
