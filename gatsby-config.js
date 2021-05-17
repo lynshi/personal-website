@@ -5,7 +5,15 @@ module.exports = {
     author: `Lyndon Shi`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     "gatsby-plugin-styled-components",
     `gatsby-transformer-sharp`, // Needed for dynamic images
