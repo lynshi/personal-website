@@ -1,8 +1,6 @@
 .vscode
 .netlify
 
-public
-
 # Logs
 logs
 *.log
