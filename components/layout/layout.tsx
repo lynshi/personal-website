@@ -5,16 +5,22 @@ import {
     faLinkedin,
     faMedium
 } from "@fortawesome/free-brands-svg-icons";
-import Head from "./head";
 
-interface LayoutProps {
+import Head from "./head";
+import Navbar from "./navbar";
+import { NavbarProps } from "./navbar";
+
+interface LayoutProps extends NavbarProps {
   pageTitle: string;
+  pageDescription: string;
 };
 
 export default function Layout(props: React.PropsWithChildren<LayoutProps>) {
   return (
     <div className="bg-black">
-      <Head pageTitle={props.pageTitle} />
+      <Head title={props.pageTitle} description={props.pageDescription} />
+
+      <Navbar {...props} />
 
       <main>{props.children}</main>
 

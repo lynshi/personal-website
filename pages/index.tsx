@@ -2,7 +2,7 @@ import Layout from "../components/layout/layout";
 
 export default function Home() {
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="Home" pageDescription="Lyndon Shi's personal website" transparentAtTop={true}>
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <h1 className="text-6xl font-bold">
           Welcome to{" "}
