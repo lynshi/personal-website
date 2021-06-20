@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -10,27 +10,31 @@ const navLinkClassNames = "text-white";
 const activeNavLinkClassNames = "text-blue-100 font-bold";
 
 export default function Navbar({ transparentAtTop }: NavbarProps) {
-  const [state, setState] = useState({
-    isTop: true,
-  });
+  const [isTop, setScrollState] = useState(true);
 
   const router = useRouter();
 
-  function scrollListener() {
-    const isTop = window.scrollY < 10;
-    if (isTop !== state.isTop) {
-      setState({ isTop: isTop });
-    }
-  }
-
+  let scrollListener: any;
   useEffect(() => {
-    window.addEventListener("scroll", scrollListener);
-  });
-
-  console.log(router.pathname);
+    scrollListener = document.addEventListener("scroll", e => {
+      var atTop = window.scrollY === 0;
+      if (atTop === true) {
+        if (isTop !== true) {
+          setScrollState(true);
+        }
+      } else {
+        if (isTop !== false) {
+          setScrollState(false);
+        }
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", scrollListener)
+    }
+  }, [isTop])
 
   return (
-    <nav className={"flex sticky top-0 z-50 items-center justify-between flex-wrap p-6 " + (state.isTop && transparentAtTop ? "bg-transparent" : "bg-gray-navbar")}>
+    <nav className={"flex sticky top-0 z-50 items-center justify-between flex-wrap p-6 " + (isTop && transparentAtTop ? "bg-transparent" : "bg-gray-navbar")}>
       <div className="flex items-center text-blue-300 mr-6">
         <Link href="/" passHref>
           <a className="font-bold text-xl tracking-tight">

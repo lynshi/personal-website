@@ -1,8 +1,10 @@
 import Layout from "../components/layout/layout";
+import Hero from "../components/index/hero";
 
 export default function Home() {
   return (
     <Layout pageTitle="Home" pageDescription="Lyndon Shi's personal website" transparentAtTop={true}>
+      <Hero />
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <h1 className="text-6xl font-bold">
           Welcome to{" "}
