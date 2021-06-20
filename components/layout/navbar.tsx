@@ -41,12 +41,12 @@ export default function Navbar({ transparentAtTop }: NavbarProps) {
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-lg lg:flex-grow">
           <Link href="/" passHref>
-            <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-700 mr-4 " + (router.pathname == "/" ? activeNavLinkClassNames : navLinkClassNames)}>
+            <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-500 mr-4 " + (router.pathname == "/" ? activeNavLinkClassNames : navLinkClassNames)}>
               Home
             </a>
           </Link>
           <Link href="/resume" passHref>
-          <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-700 mr-4 " + (router.pathname == "/resume" ? activeNavLinkClassNames : navLinkClassNames)}>
+          <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-500 mr-4 " + (router.pathname == "/resume" ? activeNavLinkClassNames : navLinkClassNames)}>
               Résumé
             </a>
           </Link>
