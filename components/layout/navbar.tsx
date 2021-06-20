@@ -32,7 +32,7 @@ class Navbar extends React.Component {
     return (
       <nav className={"flex sticky top-0 z-50 items-center justify-between flex-wrap p-6 " + (this.state.isTop && this.transparentAtTop ? "bg-transparent" : "bg-gray-navbar")}>
         <div className="flex items-center text-blue-300 mr-6">
-          <span className="font-bold text-xl tracking-tight">LYNDON SHI</span>
+          <a href="/" className="font-bold text-xl tracking-tight">LYNDON SHI</a>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-lg lg:flex-grow">
