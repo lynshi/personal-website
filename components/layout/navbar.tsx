@@ -1,52 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export interface NavbarProps {
   transparentAtTop: boolean;
 };
 
-class Navbar extends React.Component {
-  state = {
-    isTop: true
-  };
+const navLinkClassNames = "text-white";
+const activeNavLinkClassNames = "text-blue-100 font-bold";
 
-  transparentAtTop: boolean;
+export default function Navbar({ transparentAtTop }: NavbarProps) {
+  const [state, setState] = useState({
+    isTop: true,
+  });
 
-  constructor(props: NavbarProps) {
-    super(props);
-    this.transparentAtTop = props.transparentAtTop;
-    this.scrollListener = this.scrollListener.bind(this);
-  }
+  const router = useRouter();
 
-  scrollListener() {
+  function scrollListener() {
     const isTop = window.scrollY < 10;
-    if (isTop !== this.state.isTop) {
-      this.setState({ isTop });
+    if (isTop !== state.isTop) {
+      setState({ isTop: isTop });
     }
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.scrollListener);
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", scrollListener);
+  });
 
-  render() {
-    return (
-      <nav className={"flex sticky top-0 z-50 items-center justify-between flex-wrap p-6 " + (this.state.isTop && this.transparentAtTop ? "bg-transparent" : "bg-gray-navbar")}>
-        <div className="flex items-center text-blue-300 mr-6">
-          <a href="/" className="font-bold text-xl tracking-tight">LYNDON SHI</a>
-        </div>
-        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="text-lg lg:flex-grow">
-            <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-700 mr-4">
+  console.log(router.pathname);
+
+  return (
+    <nav className={"flex sticky top-0 z-50 items-center justify-between flex-wrap p-6 " + (state.isTop && transparentAtTop ? "bg-transparent" : "bg-gray-navbar")}>
+      <div className="flex items-center text-blue-300 mr-6">
+        <Link href="/" passHref>
+          <a className="font-bold text-xl tracking-tight">
+            LYNDON SHI
+          </a>
+        </Link>
+      </div>
+      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div className="text-lg lg:flex-grow">
+          <Link href="/" passHref>
+            <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-700 mr-4 " + (router.pathname == "/" ? activeNavLinkClassNames : navLinkClassNames)}>
               Home
             </a>
-            <a href="/resume" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-pink-700 mr-4">
+          </Link>
+          <Link href="/resume" passHref>
+          <a className={"block mt-4 lg:inline-block lg:mt-0 hover:text-pink-700 mr-4 " + (router.pathname == "/resume" ? activeNavLinkClassNames : navLinkClassNames)}>
               Résumé
             </a>
-          </div>
+          </Link>
         </div>
-      </nav>
-    );
-  }
+      </div>
+    </nav>
+  );
 }
-
-export default Navbar;
