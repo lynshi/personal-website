@@ -17,14 +17,14 @@ interface LayoutProps extends NavbarProps {
 
 export default function Layout(props: React.PropsWithChildren<LayoutProps>) {
   return (
-    <div className="bg-black">
+    <div className="flex flex-col bg-black min-h-screen justify-between">
       <Head title={props.pageTitle} description={props.pageDescription} />
 
       <Navbar {...props} />
 
       <main>{props.children}</main>
 
-      <footer className="grid grid-flow-col">
+      <footer className="bottom-0 grid grid-flow-col">
         <div className="text-gray-500 justify-self-start">
           &nbsp; © Lyndon Shi {new Date().getFullYear()}. View on <a href="https://github.com/lynshi/personal-website" target="_blank" rel="noopener noreferrer" className="text-gray-400">GitHub</a>!
         </div>
