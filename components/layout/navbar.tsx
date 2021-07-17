@@ -34,7 +34,7 @@ export default function Navbar({ transparentAtTop }: NavbarProps) {
     }
   }, [isTop])
 
-  function toggleNavbar (e: React.MouseEvent) {
+  function toggleNavbar (_: React.MouseEvent) {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
